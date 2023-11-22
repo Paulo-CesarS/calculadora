@@ -1,0 +1,52 @@
+<html>
+<script language="javascript"> op = ""; //operadores globais
+    num1 = "0";
+    num2 = "0";
+    resp = "";
+    PrimeiroNumero = true;
+    PontoDecimal = false;
+    memoria = ""
+
+    //******************************************************************
+
+    function verificartecla(caracter) {
+        if (window.event) { //internet explorer
+            var tecla = event.keyCode;
+            //alert (PrimeiroNumero);
+            if ((tecla > 47) && (tecgla < 59)) { //se for numero
+                tecla = tecla - 48;
+                mostra(tecla);
+            }
+
+
+            if (tecla === 46) {//se for ponto
+                mostra(".");
+            }
+            if (tecla === 43) { //se for +
+                coleta("+");
+            }
+            if (tecla === 45) { //se for -
+                coleta("-");
+            }
+            if (tecla === 47) { //se for /
+                coleta("/");
+            }
+            if (tecla === 42) { //se for *
+                coleta("*");
+            }
+            if (tecla === 13) {
+                
+                calcula();
+            }
+        }
+    }
+
+
+
+
+
+
+
+</script>
+
+</html>
